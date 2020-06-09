@@ -1,0 +1,61 @@
+html {
+	font-size: 14px;
+}
+
+body {
+	font-family: system-ui, sans-serif;
+	--teal-color: #537D88;
+}
+
+@font-face {
+  font-family: Supertext;
+  src: url(../media/ST03R.ttf);
+}
+
+h1 {
+	color: var(--teal-color);
+	font-size: 2.4rem;
+	font-weight: 500;
+	font-family: Supertext;
+    letter-spacing: -0.15rem;
+    word-spacing: -.33rem;
+}
+
+a {
+	color: var(--teal-color);
+}
+
+ul {
+	margin-top: 3rem;
+}
+
+p,
+li {
+	font-size: 1.25rem;
+}
+
+li {
+	line-height: 2.4rem;
+}
+
+li:last-of-type {
+	position: relative;
+	font-size: 1rem;
+}
+
+li:last-of-type span {
+	position: absolute;
+	left: -23px;
+	background-color: white;
+}
+
+#content {
+	margin: 120px auto;
+	width: 80%;
+}
+
+@media (min-width: 500px) {
+	#content {
+		max-width: 600px;
+	}
+}
