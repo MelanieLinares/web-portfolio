@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: Supertext;
-  src: url(ST03R.ttf);
+  src: url('ST03R.ttf');
 }
 
 h1 {
