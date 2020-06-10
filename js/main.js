@@ -1,13 +1,18 @@
+function welcome() {
    var now = new Date();
    var hrs = now.getHours(); //getHours takes visitors local time, not server time.
    var msg = "";
    
-   if (hrs > 5) msg = "and good morning"; // After 6am
-   else if (hrs > 12) msg = "and good afternoon"; // After 12pm
-   else if (hrs > 17) msg = "and good evening"; // After 5pm
+   if (hrs > 5 && hrs < 12) msg = "and good morning"; // After 6am
+   else if (hrs > 12  && hrs < 17) msg = "and good afternoon"; // After 12pm
+   else if (hrs > 17  && hrs < 24) msg = "and good evening"; // After 5pm
    else msg = "you night owl"; // After 10pm
+document.getElementById("msg").innerHTML = msg;
+}
+ 
+    welcome();
+
    
-   document.getElementById("msg").innerHTML = msg;
    
    function blink() {
     loopBlinkingInRandomCountDownTime();
